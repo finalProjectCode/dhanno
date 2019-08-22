@@ -1,0 +1,8 @@
+---
+- hosts: exercise
+  tasks: 
+    - name: copy files
+      remote_user: root
+      copy: 
+        src: demo.html
+        dest: /var/www/html
